@@ -13,6 +13,10 @@ require("plugins.lsp")
 require("plugins.cmp")
 require("plugins.nvim_comment")
 
+-- Commands
+require("commands.trimslashes")
+require("commands.relativenumber")
+
 -- Git
 toggle_current_line_blame = true
 
