@@ -9,6 +9,9 @@ require("plugins.monokai-pro")
 require("plugins.endwise")
 require("plugins.gitsigns")
 require("plugins.autopairs")
+require("plugins.lsp")
+require("plugins.cmp")
+require("plugins.nvim_comment")
 
 -- Git
 toggle_current_line_blame = true
@@ -23,5 +26,5 @@ vim.opt.relativenumber = true
 vim.opt.swapfile = false
 
 -- Spell check
-vim.opt.spelllang = "en_us"
-vim.opt.spell = true
+-- vim.opt.spelllang = "en_us"
+-- vim.opt.spell = true
