@@ -12,18 +12,31 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-	{ "phaazon/hop.nvim" },
-	{ "nvim-neo-tree/neo-tree.nvim",
-	    branch = "v2.x",
-	    dependencies = { 
-	      "nvim-lua/plenary.nvim",
-	      "nvim-tree/nvim-web-devicons",
-	      "MunifTanjim/nui.nvim",
-	      "s1n7ax/nvim-window-picker"
-	}},
-	{ "nvim-treesitter/nvim-treesitter" },
-	{ "loctvl842/monokai-pro.nvim" },
-	{ "RRethy/nvim-treesitter-endwise" },
-
+  { "phaazon/hop.nvim" },
+  { "nvim-neo-tree/neo-tree.nvim",
+      branch = "v2.x",
+      dependencies = { 
+        "nvim-lua/plenary.nvim",
+        "nvim-tree/nvim-web-devicons",
+        "MunifTanjim/nui.nvim",
+        "s1n7ax/nvim-window-picker"
+  }},
+  { "nvim-treesitter/nvim-treesitter" },
+  { "loctvl842/monokai-pro.nvim" },
+  { "RRethy/nvim-treesitter-endwise" },
+  { "lewis6991/gitsigns.nvim" },
+  { "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = {
+      highlight = {
+	pattern = [[.*<(KEYWORDS)\s*:?]],
+      }
+    },
+  },
+  { 
+    "nvim-telescope/telescope.nvim",
+    tag = "0.1.2",
+    dependencies = { "nvim-lua/plenary.nvim" },
+  },
 })
 
