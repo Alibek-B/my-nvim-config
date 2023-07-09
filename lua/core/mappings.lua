@@ -2,8 +2,9 @@ vim.g.mapleader = " "
 
 --NeoTree
 vim.keymap.set("n", "<leader>tf", ":Neotree float focus<CR>")
+vim.keymap.set("n", "<leader>ts", ":NeoTreeShowToggle<CR>")
 
-vim.keymap.set("n", "<leader>|", ":vsplit<CR>") 
+vim.keymap.set("n", "<leader>|", ":vsplit<CR>")
 
 -- Telescope
 local builtin = require("telescope.builtin")

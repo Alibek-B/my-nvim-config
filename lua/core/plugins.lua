@@ -15,7 +15,7 @@ require("lazy").setup({
   { "phaazon/hop.nvim" },
   { "nvim-neo-tree/neo-tree.nvim",
       branch = "v2.x",
-      dependencies = { 
+      dependencies = {
         "nvim-lua/plenary.nvim",
         "nvim-tree/nvim-web-devicons",
         "MunifTanjim/nui.nvim",
@@ -33,7 +33,7 @@ require("lazy").setup({
       }
     },
   },
-  { 
+  {
     "nvim-telescope/telescope.nvim",
     tag = "0.1.2",
     dependencies = { "nvim-lua/plenary.nvim" },
@@ -46,4 +46,5 @@ require("lazy").setup({
   { "hrsh7th/cmp-cmdline" },
   { "hrsh7th/nvim-cmp" },
   { "terrortylor/nvim-comment" },
+  { "nvim-lualine/lualine.nvim" },
 })

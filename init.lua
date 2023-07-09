@@ -12,6 +12,7 @@ require("plugins.autopairs")
 require("plugins.lsp")
 require("plugins.cmp")
 require("plugins.nvim_comment")
+require("plugins.lualine")
 
 -- Commands
 require("commands.trimslashes")
@@ -29,6 +30,6 @@ vim.bo.softtabstop = 2
 vim.opt.relativenumber = true
 vim.opt.swapfile = false
 
--- Spell check
--- vim.opt.spelllang = "en_us"
--- vim.opt.spell = true
+-- Highlighting
+-- ruby
+vim.cmd "hi @type.ruby guifg=#FE6F5E"
