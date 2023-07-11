@@ -29,6 +29,7 @@ vim.opt.expandtab = true
 vim.bo.softtabstop = 2
 vim.opt.relativenumber = true
 vim.opt.swapfile = false
+vim.opt.clipboard = "unnamedplus"
 
 -- Highlighting
 -- ruby
